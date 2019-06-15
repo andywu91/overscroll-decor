@@ -11,6 +11,10 @@ public interface IOverScrollDecor {
     void setOverScrollStateListener(IOverScrollStateListener listener);
     void setOverScrollUpdateListener(IOverScrollUpdateListener listener);
 
+    void setOnlyStartSideOverScroll();
+    void setOnlyEndSideOverScroll();
+    void setStartEndSideOverScroll();
+
     /**
      * Get the current decorator's runtime state, i.e. one of the values specified by {@link IOverScrollState}.
      * @return The state.
